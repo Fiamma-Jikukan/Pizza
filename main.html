@@ -1,0 +1,219 @@
+<html lang="en">
+
+<head>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מתכון לפיצה בטבון</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/pizz icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="all container-fluid">
+
+        <div id="headline">
+            <h1>מתכון לפיצה</h1>
+        </div>
+        <div id="nuv">
+            <a href="#formingRecipe"><button class="nuv">בחירת מתכון</button></a>
+            <a href="#gross"><button class="nuv">מצרכים</button></a>
+            <a href="#tools"><button class="nuv">כלים</button></a>
+            <a href="#preparation"><button class="nuv">הכנה</button></a>
+            <a href="#freezing"><button class="nuv">הקפאה</button></a>
+            <a href="#opening"><button class="nuv">פתיחה</button></a>
+            <a href="#sauce"><button class="nuv">רוטב</button></a>
+            <a href="#placeOn"><button class="nuv">הרמה למרדה</button></a>
+            <a href="#taboon"><button class="nuv">טבון</button></a>
+            <a href="#pics"><button class="nuv">תמונות</button></a>
+
+
+        </div>
+
+
+
+
+
+        <div class="looks" id="formingRecipe">
+            <h2 class="space">כמות הקמח הרצויה:</h2>
+            <input type="number" name="dFlour" id="dFlour" placeholder="כמות הקמח הרצויה (גרם)">
+            <button class="" type="submit" onclick="byFlour(document.getElementById('dFlour').value)">לחץ כאן כדי לקבל
+                את
+                המתכון</button>
+            <button type="submit" onclick="oneFlour()">מתכון רגיל 1 קילו קמח</button>
+            <h2 class="space">זמן התפחה:</h2>
+
+            <select name="timePoof" id="timePoof">
+                <option value="poof1">24 שעות</option>
+                <option value="poof2">48 שעות</option>
+                <option value="poof3">72 שעות</option>
+
+            </select>
+
+        </div>
+        <div class="looks" id="theRecipe">
+            <h2>המתכון:</h2>
+            <ul class="noDots">
+                <li id="fff"></li>
+                <li id="dWater"></li>
+                <li id="dSalt"></li>
+                <li id="dyist"></li>
+
+            </ul>
+        </div>
+        <div class="looks">
+            <h2 id="gross">מצרכים:</h2>
+            <ul>
+                <li>קמח 00 קפוטו</li>
+                <li>קמח סמולינה</li>
+                <li>קמח טיפו 1</li>
+                <li>שמרים טריים</li>
+                <li>גבינת גרנה פדנו (מומלץ להשתמש בגבינות גד)</li>
+                <li>מוצרלה פרסקה</li>
+                <li>מוצרלה בצורת נקניק</li>
+                <li>מוצרלה ועמק מגורדות</li>
+                <li>עגבניות שימורים סן מרזנו</li>
+                <li>שמן כמהין</li>
+            </ul>
+
+            <h2 id="tools">כלים:</h2>
+            <ul>
+                <li>יעה שפכטל מתכת לגירוד פיח</li>
+                <li>שפכטל מפלסטיק למטבח</li>
+                <li>כף סיבוב לטבון</li>
+                <li>כפפות חסינות אש</li>
+                <li>משקל מדויק ל0.01 גרם</li>
+                <li>מדחום לבצק עם מחט</li>
+                <li>רשת סינון</li>
+                <li>קופסת התפחה 60x40</li>
+            </ul>
+
+            <h2 id="preparation">הכנה:</h2>
+            <ol>
+                <li>את הקמח מומלץ להכניס למקרר ולהוציא לפני שמתחילים להכין - משתמשים בו כאשר הקמח קר.</li>
+                <li>יוצקים את המים לקערת המיקסר וממיסים את השמרים במים. <strong>המים צריכים להיות קרים.</strong></li>
+                <li>ניתן לערבב את הקמחים בצורה הבאה - אם משתמשים בקילו קמח מקפוטו 00 שמים 800 גרם, מסמולינה 100 גרם
+                    ומטיפו אחד 100 גרם. <br> אם משנים את כמות הקמח הכוללת פשוט מחשבים את היחס החדש. (לדוגמה: 750 גרם
+                    כולל - 600 קפוטו, 75 סמולינה, 75 טיפו אחד).</li>
+                <li>מוסיפים את הקמח (והסוכר במידה וקיים במתכון) ולשים עד קבלת תערובת אחידה אך עדיין גושית.</li>
+                <li>מכסים את קערת המיקסר בניילון נצמד (או מגבת לחה ישירות על הבצק, למנוע כניסת אוויר) ומשאירים למנוחה
+                    במקרר של 40 דקות (אוטוליזה).
+                </li>
+                <li>לשים את הבצק במיקסר כ-5 דקות.</li>
+                <li>מוסיפים את המלח (והשמן במידה וקיים במתכון) וממשיכים ללוש עד קבלת בצק אחיד ומפותח דיו.
+                    <ul>
+                        <li>לכוון ל24 מעלות, לא לעבור את ה26 מעלות של הבצק (28 הבצק נהרס).</li>
+                        <li>בודקים שהבצק נמתח טוב ולא נקרע בקלות, צריך להיות מאוד דק לפני שהוא נקרע
+                        </li>
+                    </ul>
+                </li>
+
+                <li>מחלצים את הבצק מקערת המיקסר, מכדררים לכדור מהודק ומשאירים על השולחן למנוחה של בערך שעה מכוסה.
+                    <ul>
+                        <li class="noDots bold">איך מכדררים?</li>
+                        <li>מרימים את הבצק מעל השולחן, ומקפלים אותו לתוך עצמו.</li>
+                        <li>עם האצבעות על השולחן (זרת) גוררים את הבצק כלפיך ומחזיקים את הבצק ככה שהוא לא בורח מתחת
+                            לאצבעות. לא לגלגל את הבצק, למתוח אותו על גבי השולחן.
+                        </li>
+                    </ul>
+                </li>
+                <li>מכניסים לקופסה אטומה או קערה מכוסה בניילון נצמד ומשאירים את הבצק להתססה במקרר לפי זמן ההתפחה שבחרנו
+                    (24 שעות\ 48 שעות\ 72 שעות).
+                </li>
+                <li>לאחר סיום ההתססה מוציאים את הבצק מהמקרר, מחלקים לכדורים במשקל 270-330 גרם (תלוי בגודל הפיצה הרצוי),
+                    מכדררים ומניחים להתפחה סופית של 6 שעות בחורף. כשעתיים בקיץ.</li>
+            </ol>
+
+            <h2 class="space" id="freezing">הקפאה:</h2>
+            <p>הקפאה - אחרי ההתפחה, להוציא מהמקרר, לחתוך לכדורים, לכדרר, לעטוף בקמח סמולינה, כל כדור בשקית סנדוויץ'
+                ולמקפיא.
+                <br>
+                הפשרה - לילה לפני לשים במקרר, ולמחרת להוציא (בחורף 6 שעות לפני, בקיץ שעה-שעתיים לפני) לטמפ' החדר.
+            </p>
+
+            <h2 class="space" id="opening">פתיחה:</h2>
+            <ol>
+                <li class="bold">הכל בעדינות, לא למעוך את הבצק ולא לדחוף לתוך השולחן.
+                </li>
+                <li>לחלץ מהקופסה בעזרת שפכטל וקמח סמולה.
+                </li>
+                <li>לחלץ לתוך קופסה של קמח סמולה, לעטוף בהרבה קמח סמולה.
+                </li>
+                <li>לעשות גבול קל עם האצבעות.
+                </li>
+                <li>לדחוף בעדינות מהמרכז החוצה, לדחוף את האוויר לקצוות.
+                </li>
+                <li>להחזיק ב2 אצבעות מהגבול (לא מהשוליים עצמם) ולסובב את הפיצה לאט לאט, לתת לכבידה למתוח את הבצק.
+                </li>
+                <li>להחזיק את הפיצה עם 2 אגרופים למתוח, ולסובב קצת.
+                </li>
+                <li><strong>לא להכביד עם רטבים ותוספות</strong> – פיצה קלה = פיצה שלא נדבקת.
+                </li>
+            </ol>
+
+            <h2 class="space" id="sauce">רוטב:</h2>
+            <h3 class="space">מצרכים:</h3>
+            <ul>
+                <li>400 גרם עגבניות מרוסקות או עגבניות סן מרזנו</li>
+                <li>שן שום</li>
+                <li>5 גרם מלח</li>
+                <li>כפית אורגנו יבש</li>
+            </ul>
+            <h3 class="space">אופן הכנה:</h3>
+            <ol>
+                <li>לשים בקערה את כל מרכיבי הרוטב ולערבב היטב באמצעות מוט בלנדר.</li>
+                <li>יש להקפיד לערבל בפולסים על מנת למנוע הכנסת אוויר לרוטב.</li>
+                <li>לתקן תיבול במידת הצורך.</li>
+            </ol>
+
+            <h2 class="space" id="placeOn">הרמה למרדה:</h2>
+            <ol>
+                <li>בתנועה חדה אחת להחליק את המרדה מתחת לפיצה.
+                </li>
+                <li>למשוך בעדינות אם נשאר את שאר הפיצה למרדה.
+                </li>
+                <li>לסדר ולמתוח את הפיצה מהתחתית לא מהשוליים! ככה שהיא ממלאה את שטח המרדה.
+                </li>
+
+            </ol>
+
+            <h2 class="space" id="taboon">טבון:</h2>
+            <ul>
+                <li> לחמם היטב את הטבון בחום מקסימלי ולפני הכנסת הפיצה להנמיך לאש נמוכה. הטמפרטורה הנמוכה ביותר 350
+                    מעלות.
+                </li>
+            </ul>
+
+            <h2 class="space" id="pics">תמונות:</h2>
+            <div id="allImgs">
+                <img src="pics/what we are fighting for.jpg" alt="what we are fighting for" class="gallery img-responsive">
+                <img src="pics/hatchapuri1.jpeg" alt="hatchapuri" class="gallery img-responsive">
+                <img src="pics/hatchapuri2.jpeg" alt="hatchapuri" class="gallery img-responsive">
+                <img src="pics/salmonela.jpeg" alt="yelloe flour" class="gallery img-responsive">
+                <img src="pics/tipo 1.jpeg" alt="another flour" class="gallery img-responsive">
+                <img src="pics/shtibel.jpeg" alt="shtibel" class="gallery img-responsive">
+                <img src="pics/temp.jpg" alt="temp taker" class="gallery img-responsive">
+                <img src="pics/tomato.jpg" alt="san bernard" class="gallery img-responsive">
+                <img src="pics/oil.jpg" alt="oil" class="gallery img-responsive">
+                <img src="pics/grana padano.jpg" alt="padano" class="gallery img-responsive">
+                <img src="pics/mutsarella.jpg" alt="mutsarella" class="gallery img-responsive">
+                <img src="pics/cheese.jpeg" alt="various cheeses" class="gallery img-responsive">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="endOfPage">
+        <p>האתר הזה נועד לשימוש האישי של משפחת צ'יזיק.<br> אין להעתיק לשכפל לתרץ או להתרוצץ.</p>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+    direction: grid;
+    background-color: rgb(142, 140, 140);
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(176, 2, 2);
+    padding: 3.5%;
+    color: silver;
+    font-size: 300%;
+
+}
+
+.looks {
+    margin-right: 5%;
+    padding-top: 1%;
+
+}
+
+li {
+    margin-right: 2%;
+    padding-top: 1%;
+}
+
+.space {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+
+}
+
+ul {
+    /* list-style-type: none; */
+    padding-bottom: 1%;
+}
+
+.noDots {
+    list-style-type: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+ol {
+    padding-bottom: 1%;
+
+}
+
+
+
+.all {
+    padding-bottom: 10%;
+    font-family: narkisim;
+
+}
+
+h1,
+h2 {
+    text-decoration: underline;
+}
+
+img {
+    margin: 0.6%;
+}
+
+.nuv {
+    text-decoration: none;
+    background-color: rgb(176, 2, 2);
+    padding: 1%;
+    text-align: center;
+    color: yellow;
+    font-family: narkisim;
+    font-size: 100%;
+    /* border-radius: 5%;
+    border-color: rgb(176, 2, 2); */
+    border-style: none;
+    transition-duration: 0.4s;
+
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* a:hover,
+a:active {
+    background-color: red;
+} */
+
+a:visited {
+    text-decoration: none;
+}
+
+#nuv {
+    /* display: inline-flex; */
+    margin-right: 1%;
+    margin-top: 0.5%;
+
+}
+
+.nuv:hover {
+    font-size: 110%;
+}
+
+.allImgs{
+display: flex;
+}
+
+.gallery{
+    width: 25em;
+    flex: auto;
+
+}
+
+.endOfPage{
+background-color: black;
+padding: 5%;
+text-align: center;
+font-family: narkisim;
+font-size: 120%;
+color: white;
+}
+
